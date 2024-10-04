@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Analytics Dashboard</h1>
+    </div>
+
+    <header>
+      <main>
+        <section class="metrics">
+          <div class="metric">
+            <h2>Total Users</h2>
+            <p id="totalUsers">$1,234</p>
+          </div>
+
+          <div class="metric">
+            <h2>Total Revenue</h2>
+            <p id="totalRevenue">$5,678</p>
+          </div>
+
+          <div class="metric">
+            <h2>New Signups</h2>
+            <p class="newsignups">89</p>
+          </div>
+        </section>
+
+        <section class="chart">
+          <canvas id="myChart"></canvas>
+        </section>
+      </main>
+    </header>
+    <script src='https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js'></script>
+    <script src="script.js"></script>
+  </body>
+</html>
